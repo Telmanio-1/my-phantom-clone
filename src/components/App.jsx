@@ -1,34 +1,32 @@
 import { useState } from 'react'
-import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
+import { pillars } from '../data/pillars'
+import Spotlight from './Spotlight'
+import ThemeToggle from './ThemeToggle'
+import PillarSection from './PillarSection'
 import '../styles/App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showSpotlight, setShowSpotlight] = useState(true)
+
+  const handleMove = (e) => {
+    const x = (e.clientX / window.innerWidth) * 2 - 1
+    const y = (e.clientY / window.innerHeight) * 2 - 1
+    document.documentElement.style.setProperty('--rx', `${y * 5}deg`)
+    document.documentElement.style.setProperty('--ry', `${x * 5}deg`)
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/components/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div onMouseMove={handleMove}>
+      <ThemeToggle />
+      <Spotlight open={showSpotlight} onClose={() => setShowSpotlight(false)} />
+      <header className="hero" onClick={() => setShowSpotlight(true)}>
+        <h1>Портфолио</h1>
+        <p>Наведи курсор и исследуй проекты</p>
+      </header>
+      {pillars.map((p) => (
+        <PillarSection key={p.id} title={p.title} items={p.items} />
+      ))}
+    </div>
   )
 }
 

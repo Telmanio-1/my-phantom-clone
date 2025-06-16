@@ -1,14 +1,20 @@
 # my-phantom-clone
 
-This repository contains a simple React project bootstrapped with [Vite](https://vitejs.dev/).
+This repository contains a React portfolio site built with [Vite](https://vitejs.dev/).
 
 ## Development
-
-Run the following commands to start the development server:
 
 ```bash
 npm install
 npm start
 ```
 
-The app will be available at `http://localhost:5173`.
+Open `http://localhost:5173` in your browser.
+
+The portfolio includes:
+
+- **Spotlight search** overlay for quick navigation between portfolio items.
+- **Glassmorphism** panels with animated entrance effects powered by `framer-motion`.
+- **Dark/Light theme** toggle that stores your preference locally.
+
+Feel free to extend the data in `src/data/pillars.js` with your real projects.

@@ -1,0 +1,29 @@
+:root {
+  --bg: #ffffff;
+  --text: #213547;
+  --panel: rgba(255, 255, 255, 0.6);
+}
+
+:root[data-theme='dark'] {
+  --bg: #121212;
+  --text: #e8e8e8;
+  --panel: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--panel);
+  backdrop-filter: blur(8px);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
