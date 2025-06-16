@@ -14,16 +14,10 @@ body {
   background: var(--bg);
   color: var(--text);
   transition: background 0.3s, color 0.3s;
+  font-family: 'Inter', sans-serif;
 }
 
-.theme-toggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  background: var(--panel);
-  backdrop-filter: blur(8px);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  cursor: pointer;
+[data-tilt] {
+  transform: perspective(600px) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
+  transition: transform 0.1s;
 }

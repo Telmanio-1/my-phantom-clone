@@ -1,6 +1,6 @@
 # my-phantom-clone
 
-This repository contains a React portfolio site built with [Vite](https://vitejs.dev/).
+Interactive portfolio built with [React](https://react.dev/), [Vite](https://vitejs.dev/), [Tailwind CSS](https://tailwindcss.com/) and [Framer Motion](https://www.framer.com/motion/).
 
 ## Development
 
@@ -11,10 +11,13 @@ npm start
 
 Open `http://localhost:5173` in your browser.
 
-The portfolio includes:
+## Features
 
-- **Spotlight search** overlay for quick navigation between portfolio items.
-- **Glassmorphism** panels with animated entrance effects powered by `framer-motion`.
-- **Dark/Light theme** toggle that stores your preference locally.
+- Futuristic glassmorphism styling with animated transitions
+- Five key directions showcased in an auto-rotating slider
+- Spotlight search overlay and dark/light theme toggle
+- Separate pages: Home, About, Portfolio, Contact
 
-Feel free to extend the data in `src/data/pillars.js` with your real projects.
+## Deploy
+
+Run `npm run build` and upload the `dist` folder to Vercel or Netlify.
