@@ -1,4 +1,4 @@
-# neVPN
+#profile-title: neVPN
 vless://b8f72716-3eb7-47f0-a560-8085abac6ada@fl2.101559001.xyz:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=fl2.101559001.xyz&pbk=Z0xP39qMyant-o5yNrLEAyBZZgTT-2kNg1rhVy0mH28#%F0%9F%87%AB%F0%9F%87%AE%D0%A5%D0%B5%D0%BB%D1%8C%D1%81%D0%B8%D0%BD%D0%BA%D0%B8%20%232
 vless://b8f72716-3eb7-47f0-a560-8085abac6ada@lit.101559001.xyz:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=lit.101559001.xyz&pbk=IRiA6mGuGEnFIOM9FQwnLDkJ9selV0kRRDhsh6cLwCk#%F0%9F%87%B1%F0%9F%87%B9%D0%92%D0%B8%D0%BB%D1%8C%D0%BD%D1%8E%D1%81
 vless://b8f72716-3eb7-47f0-a560-8085abac6ada@nl2.101559001.xyz:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=nl2.101559001.xyz&pbk=C5aKcnKKddIPy2ZT4U5PULMf0uU4cbKKYMtP9ytCe1I#%F0%9F%87%B3%F0%9F%87%B1%D0%90%D0%BC%D1%81%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC%20%232
