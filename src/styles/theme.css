@@ -1,0 +1,23 @@
+:root {
+  --bg: #ffffff;
+  --text: #213547;
+  --panel: rgba(255, 255, 255, 0.6);
+}
+
+:root[data-theme='dark'] {
+  --bg: #121212;
+  --text: #e8e8e8;
+  --panel: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Inter', sans-serif;
+}
+
+[data-tilt] {
+  transform: perspective(600px) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
+  transition: transform 0.1s;
+}

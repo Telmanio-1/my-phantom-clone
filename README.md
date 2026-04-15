@@ -1,14 +1,23 @@
 # my-phantom-clone
 
-This repository contains a simple React project bootstrapped with [Vite](https://vitejs.dev/).
+Interactive portfolio built with [React](https://react.dev/), [Vite](https://vitejs.dev/), [Tailwind CSS](https://tailwindcss.com/) and [Framer Motion](https://www.framer.com/motion/).
 
 ## Development
-
-Run the following commands to start the development server:
 
 ```bash
 npm install
 npm start
 ```
 
-The app will be available at `http://localhost:5173`.
+Open `http://localhost:5173` in your browser.
+
+## Features
+
+- Futuristic glassmorphism styling with animated transitions
+- Five key directions showcased in an auto-rotating slider
+- Spotlight search overlay and dark/light theme toggle
+- Separate pages: Home, About, Portfolio, Contact
+
+## Deploy
+
+Run `npm run build` and upload the `dist` folder to Vercel or Netlify.
